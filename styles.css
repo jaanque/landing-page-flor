@@ -1,20 +1,31 @@
-/* ========= VARIABLES CSS ========= */
-:root {
-  /* Colors for Pizzeria Artesanal Italiana */
-  --primary-color: #a62c2b; /* Deep red for accents and CTA */
-  --secondary-color: #f4f1e9; /* Warm cream for backgrounds */
-  --text-color: #3d2c2c; /* Dark brown for body text */
-  --heading-color: #2a1d1d; /* Slightly darker brown for headings */
-  --accent-green: #556b2f; /* Olive green for details */
-  --white-color: #ffffff; /* Pure white for cards and contrast */
-  --border-color: #dcdcdc; /* Light grey for borders */
+/* ============================================
+   ACTIVITAT 2: ESTILITZACIÓ AMB CSS
+   Nom: Jules Agent
+   Restaurant: Trattoria del Ponte
+   ============================================ */
 
-  /* Typography */
+/* ============================================
+   VARIABLES CSS
+   Defineix aquí totes les teves variables
+   ============================================ */
+:root {
+  /* Colors per Pizzeria Artesanal Italiana */
+  --primary-color: #a62c2b;      /* Vermell fosc per a accents i CTA */
+  --secondary-color: #f4f1e9;    /* Crema càlid per a fons */
+  --text-color: #3d2c2c;         /* Marró fosc per al text del cos */
+  --heading-color: #2a1d1d;      /* Marró lleugerament més fosc per a títols */
+  --accent-color: #556b2f;       /* Verd oliva per a detalls */
+  --white-color: #ffffff;        /* Blanc pur per a targetes i contrast */
+  --border-color: #dcdcdc;       /* Gris clar per a vores */
+
+  /* Tipografia */
   --font-headings: 'Playfair Display', serif;
   --font-body: 'Lato', sans-serif;
 }
 
-/* ========= BASE STYLES ========= */
+/* ============================================
+   RESET I ESTILS GENERALS
+   ============================================ */
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +43,13 @@ body {
   line-height: 1.6;
 }
 
+section {
+  padding: 4rem 2rem;
+}
+
+/* ============================================
+   TIPOGRAFIA
+   ============================================ */
 h1, h2, h3 {
   font-family: var(--font-headings);
   color: var(--heading-color);
@@ -47,7 +65,7 @@ p {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--accent-color);
   text-decoration: none;
 }
 
@@ -55,16 +73,9 @@ ul {
   list-style: none;
 }
 
-section {
-  padding: 4rem 2rem;
-}
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/* ========= HEADER & NAVIGATION ========= */
+/* ============================================
+   NAVEGACIÓ
+   ============================================ */
 header {
   background-color: var(--white-color);
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -105,7 +116,9 @@ nav {
   color: var(--primary-color);
 }
 
-/* ========= HERO SECTION ========= */
+/* ============================================
+   HERO SECTION
+   ============================================ */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/random/1600x900/?pizza') no-repeat center center/cover;
   color: var(--white-color);
@@ -122,7 +135,9 @@ nav {
   margin-bottom: 2rem;
 }
 
-/* ========= BUTTONS ========= */
+/* ============================================
+   BOTONS
+   ============================================ */
 .btn-primary {
   display: inline-block;
   background-color: var(--primary-color);
@@ -140,14 +155,18 @@ nav {
   transform: translateY(-2px);
 }
 
-/* ========= ABOUT SECTION ========= */
+/* ============================================
+   SECCIÓ SOBRE NOSALTRES
+   ============================================ */
 .about {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* ========= MENU HIGHLIGHT SECTION ========= */
+/* ============================================
+   DESTACATS DEL MENÚ
+   ============================================ */
 .menu-highlight {
   background-color: var(--white-color);
 }
@@ -176,7 +195,7 @@ nav {
 }
 
 .dish-card h3 {
-  color: var(--accent-green);
+  color: var(--accent-color);
 }
 
 .price {
@@ -187,9 +206,11 @@ nav {
   margin-top: 1rem;
 }
 
-/* ========= RESERVATION FORM ========= */
+/* ============================================
+   FORMULARI DE RESERVA
+   ============================================ */
 .reservation {
-  background-color: #e3ded5; /* Slightly darker than secondary */
+  background-color: #e3ded5;
 }
 
 .reservation h2 {
@@ -222,7 +243,9 @@ input:focus, select:focus {
   box-shadow: 0 0 5px rgba(166, 44, 43, 0.5);
 }
 
-/* ========= FOOTER ========= */
+/* ============================================
+   FOOTER
+   ============================================ */
 footer {
   background-color: var(--heading-color);
   color: var(--secondary-color);
